@@ -28,6 +28,11 @@ pipeline{
                 }
             }
         }
+        stage ("Second stage"){
+            steps {
+                echo "Second stage"
+            }
+        }
     }
     post{
         always{
